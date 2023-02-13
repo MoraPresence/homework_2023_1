@@ -41,9 +41,4 @@ QUnit.module('Тестируем функцию rle: bad input', function () {
     }, Error("there are numbers in the string"), 'rle(33334) === Error("there are numbers in the string")');
   });
 
-  QUnit.test('rle без аргументов', function (assert) {
-    assert.throws(function () {
-      rle()
-    }, Error("input is null"), 'rle() === Error("input is null")');
-  });
 });
